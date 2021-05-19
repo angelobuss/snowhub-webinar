@@ -1,0 +1,6 @@
+CREATE OR REPLACE FUNCTION "TOTAL_NUMBER_OF_PRODUCTS"()
+RETURNS NUMBER(38,0)
+LANGUAGE SQL
+AS '
+select sum(quantity) from t_product
+';
