@@ -1,0 +1,1 @@
+create or replace sequence SEQ_COMPENSATION start with 1 increment by 1;
