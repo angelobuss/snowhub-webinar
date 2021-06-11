@@ -1,0 +1,1 @@
+create or replace sequence SEQ_PRODUCTION_DETAILS start with 1 increment by 1;

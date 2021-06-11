@@ -1,0 +1,2 @@
+
+ create  recursive  view  V_EMPLOYEE_HIERARCHY  (title, employee_id, manager_id, mgr_title)  as (select      title,          employee_id,              manager_id,                  null as mgr_title                     from t_employee                         where title = 'president'                             union all                                 select t_employee.title,t_employee.employee_id,t_employee.manager_id,v_employee_hierarchy.title as mgr_title from t_employee inner join v_employee_hierarchy where v_employee_hierarchy.employee_id = t_employee.manager_id ); ;

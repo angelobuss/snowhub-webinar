@@ -1,0 +1,1 @@
+create or replace stream PI_CALLS_STREAM on table SP_PI_CALLS;
